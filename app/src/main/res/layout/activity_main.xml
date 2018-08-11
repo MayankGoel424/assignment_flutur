@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_background"
+        android:weightSum="3"
+
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/slot_1"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/slot6"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/slot_2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/slot4"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/slot_3"
+            android:layout_weight="1"
+            android:src="@drawable/slot5"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/play"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"/>
+
+</RelativeLayout>
