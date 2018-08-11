@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView img1,img2,img3;
     private Wheel wheel1,wheel2,wheel3;
     private Button btn;
+    private int gh;
     private boolean isstarted;
     public static final Random RANDOM = new Random();
     public static long randomLong(long lower, long upper){
